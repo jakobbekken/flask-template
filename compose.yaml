@@ -1,0 +1,7 @@
+services:
+  app:
+    build:
+      context: flask
+    stop_signal: SIGINT  # required to stop gracefully
+    ports:
+      - "5000:5000"
