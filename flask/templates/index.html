@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My amazing site</title>
-    <link href="/style.css" rel="stylesheet">
+    <link href="href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
   </head>
   <body>
     <p>Click <a href="/test">HERE</a> for the answer!</p>
