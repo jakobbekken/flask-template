@@ -1,2 +1,14 @@
+#!/bin/bash
+
+cleanup() {
+  echo "Stopping Docker containers..."
+  docker compose down
+  exit 0
+}
+
+trap cleanup SIGINT
+
+echo "Starting Docker containers..."
 docker compose up --build
-docker compose down
+
+cleanup
