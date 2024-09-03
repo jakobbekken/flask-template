@@ -1,2 +1,2 @@
+trap "docker compose down; exit 0" SIGINT
 docker compose up --build
-docker compose down
